@@ -60,7 +60,7 @@ RCT_EXPORT_METHOD(
               builder.audioMuted = [[meetOptions objectForKey:@"audioMuted"] boolValue];
 
             if(meetFeatureFlags[@"addPeopleEnabled"] != NULL)
-              [builder setFeatureFlag:@"add-people.enabled" withBoolean:NO];
+              [builder setFeatureFlag:@"add-people.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"addPeopleEnabled"] boolValue]];
             if(meetFeatureFlags[@"calendarEnabled"] != NULL)
               [builder setFeatureFlag:@"calendar.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"calendarEnabled"] boolValue]];
             if(meetFeatureFlags[@"callIntegrationEnabled"] != NULL)
@@ -70,7 +70,7 @@ RCT_EXPORT_METHOD(
             if(meetFeatureFlags[@"closeCaptionsEnabled"] != NULL)
               [builder setFeatureFlag:@"close-captions.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"closeCaptionsEnabled"] boolValue]];
             if(meetFeatureFlags[@"inviteEnabled"] != NULL)
-              [builder setFeatureFlag:@"invite.enabled" withBoolean:NO];
+              [builder setFeatureFlag:@"invite.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"inviteEnabled"] boolValue]];
             if(meetFeatureFlags[@"iosRecordingEnabled"] != NULL)
               [builder setFeatureFlag:@"ios-recording.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"iosRecordingEnabled"] boolValue]];
             if(meetFeatureFlags[@"liveStreamingEnabled"] != NULL)
