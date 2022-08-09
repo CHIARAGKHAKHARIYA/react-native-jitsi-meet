@@ -67,7 +67,7 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                         .setFeatureFlag("chat.enabled", meetFeatureFlags.hasKey("chatEnabled") ?meetFeatureFlags.getBoolean("chatEnabled") : true)
                         .setFeatureFlag("close-captions.enabled", meetFeatureFlags.hasKey("closeCaptionsEnabled") ?meetFeatureFlags.getBoolean("closeCaptionsEnabled") : true)
                         .setFeatureFlag("invite.enabled", meetFeatureFlags.hasKey("inviteEnabled") ?meetFeatureFlags.getBoolean("inviteEnabled") : false)
-                        .setFeatureFlag("android.screensharing.enabled", meetFeatureFlags.hasKey("androidScreenSharingEnabled") ?meetFeatureFlags.getBoolean("androidScreenSharingEnabled") : true)
+                        .setFeatureFlag("android.screensharing.enabled", meetFeatureFlags.hasKey("androidScreenSharingEnabled") ?meetFeatureFlags.getBoolean("androidScreenSharingEnabled") : false)
                         .setFeatureFlag("live-streaming.enabled", meetFeatureFlags.hasKey("liveStreamingEnabled") ?meetFeatureFlags.getBoolean("liveStreamingEnabled") : true)
                         .setFeatureFlag("meeting-name.enabled", meetFeatureFlags.hasKey("meetingNameEnabled") ?meetFeatureFlags.getBoolean("meetingNameEnabled") : true)
                         .setFeatureFlag("meeting-password.enabled", meetFeatureFlags.hasKey("meetingPasswordEnabled") ?meetFeatureFlags.getBoolean("meetingPasswordEnabled") : true)
