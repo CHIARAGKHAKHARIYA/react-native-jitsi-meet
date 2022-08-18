@@ -72,7 +72,7 @@ RCT_EXPORT_METHOD(
             if(meetFeatureFlags[@"inviteEnabled"] != NULL)
               [builder setFeatureFlag:@"invite.enabled" withBoolean:NO];
             if(meetFeatureFlags[@"iosRecordingEnabled"] != NULL)
-              [builder setFeatureFlag:@"ios-recording.enabled" withBoolean:YES];
+              [builder setFeatureFlag:@"ios-recording.enabled" withBoolean:NO];
             if(meetFeatureFlags[@"liveStreamingEnabled"] != NULL)
               [builder setFeatureFlag:@"live-streaming.enabled" withBoolean:YES];
             if(meetFeatureFlags[@"meetingNameEnabled"] != NULL)
