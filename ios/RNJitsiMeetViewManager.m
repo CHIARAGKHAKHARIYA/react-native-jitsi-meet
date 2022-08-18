@@ -89,8 +89,8 @@ RCT_EXPORT_METHOD(
               [builder setFeatureFlag:@"kick-out.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"kickOutEnabled"] boolValue]];
             if(meetFeatureFlags[@"conferenceTimerEnabled"] != NULL)
               [builder setFeatureFlag:@"conference-timer.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"conferenceTimerEnabled"] boolValue]];
-            if(meetFeatureFlags[@"meetingPasswordEnabled"] != NULL)
-              [builder setFeatureFlag:@"video-share.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"meetingPasswordEnabled"] boolValue]];
+            if(meetFeatureFlags[@"videoShareButtonEnabled"] != NULL)
+              [builder setFeatureFlag:@"video-share.enabled" withBoolean:NO];
             if(meetFeatureFlags[@"meetingPasswordEnabled"] != NULL)
               [builder setFeatureFlag:@"meeting-password.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"meetingPasswordEnabled"] boolValue]];
             if(meetFeatureFlags[@"pipEnabled"] != NULL)
